@@ -1,10 +1,10 @@
 #!/bin/bash
-# Usage: ./process_monitor.sh <process_name> <interval_seconds>
+# Usage: ./process_monitor.sh 
 
-PROCESS_NAME="${1:-bash}"     # process to watch (default: bash)
-INTERVAL="${2:-5}"            # check every N seconds (default: 5)
-CPU_LIMIT=80                  # warn if CPU % is above this
-MEM_LIMIT=80                  # warn if memory % is above this
+PROCESS_NAME="${1:-bash}"     
+INTERVAL="${2:-5}"            
+CPU_LIMIT=80                  
+MEM_LIMIT=80                  
 LOG_FILE="monitor.log"
 
 # Function to print a message with time and save it to the log file
